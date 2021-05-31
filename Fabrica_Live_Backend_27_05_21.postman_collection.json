@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "0e43361b-e301-4a68-8740-5b6a1236bc8b",
+		"name": "Fabrica_Live_Backend_27_05_21",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ler todas as mensagens",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/mensagens"
+			},
+			"response": []
+		},
+		{
+			"name": "Ler mensagem pelo ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/mensagens/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Criar mensagem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mensagem\" : \"testeRepetido\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/mensagens"
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar mensagem pelo ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mensagem\" : \"mensagem atualizada3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/mensagens/3"
+			},
+			"response": []
+		},
+		{
+			"name": "Remover mensagem pelo ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3000/mensagens/2"
+			},
+			"response": []
+		}
+	]
+}

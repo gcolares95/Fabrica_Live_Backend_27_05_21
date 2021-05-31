@@ -42,7 +42,6 @@ app.get('/mensagens/:id', (req, res) => {
 });
 
 //- [POST] /mensagens - Cria novas mensagem
-
 app.post('/mensagens', (req, res) => {
     const mensagem = req.body.mensagem;  
     
